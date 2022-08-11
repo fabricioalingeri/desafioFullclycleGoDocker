@@ -38,6 +38,7 @@ COPY . .
 RUN CGO_ENABLED=0 go build -a -ldflags '-extldflags "-static" -s -w' main.go
 ```
 - Stage 2
+```
 # Iniciando com scratch
 FROM scratch
 
